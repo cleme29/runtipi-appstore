@@ -1,0 +1,57 @@
+{
+  "name": "Invoice Ninja",
+  "available": true,
+  "port": 8003,
+  "exposable": true,
+  "id": "invoiceninja",
+  "description": "An open-source invoicing and time-tracking app built with Laravel",
+  "tipi_version": 1,
+  "version": "5.7.54",
+  "categories": ["finance"],
+  "short_desc": "An open-source invoicing and time-tracking app built with Laravel",
+  "author": "invoiceninja", 
+  "source": "https://github.com/invoiceninja/invoiceninja",
+  "website": "https://www.invoiceninja.org/",
+  "form_fields": [
+    {
+        "type": "text",
+        "label": "Username",
+        "max": 50,
+        "min": 3,
+        "required": true,
+        "env_variable": "INVOICENINJA_ADMIN_USER"
+    },
+    {
+        "type": "password",
+        "label": "Password",
+        "max": 50,
+        "min": 3,
+        "required": true,
+        "env_variable": "INVOICENINJA_ADMIN_PASSWORD"
+    },
+    {
+      "type": "random",
+      "label": "DB Password",
+      "max": 50,
+      "min": 16,
+      "required": true,
+      "env_variable": "INVOICENINJA_ADMIN_DB_PASSWORD"
+    },
+    {
+      "type": "random",
+      "label": "DB Root Password",
+      "max": 50,
+      "min": 16,
+      "required": true,
+      "env_variable": "INVOICENINJA_ADMIN_DB_ROOT_PASSWORD"
+    },
+    {
+      "type": "fqdnip",
+      "label": "Application URL (FQDN or IP), ex: invoiceninja.example.com",
+      "max": 50,
+      "min": 1,
+      "required": true,
+      "env_variable": "INVOICENINJA_APP_URL"
+    }
+  ]
+}
