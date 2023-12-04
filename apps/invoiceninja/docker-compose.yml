@@ -1,8 +1,8 @@
 services:
   
-  invoiceninja-app:
+  invoiceninja:
     image: tiredofit/invoiceninja
-    container_name: invoiceninja-app
+    container_name: invoiceninja
     links:
       - invoiceninja-db
     volumes:
@@ -13,7 +13,7 @@ services:
       ### If you want to just keep the original source and add additional modules uncomment this line
       - ${APP_DATA_DIR}/logs/:/www/logs
     environment:
-      - CONTAINER_NAME=invoiceninja-app
+      - CONTAINER_NAME=invoiceninja
       - TIMEZONE=${TZ}
       
       - DB_HOST=invoiceninja-db
