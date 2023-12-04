@@ -6,7 +6,7 @@
   "id": "invoiceninja",
   "description": "An open-source invoicing and time-tracking app built with Laravel",
   "tipi_version": 1,
-  "version": "5.7.54",
+  "version": "5.7.57",
   "categories": ["finance"],
   "short_desc": "An open-source invoicing and time-tracking app built with Laravel",
   "author": "invoiceninja", 
