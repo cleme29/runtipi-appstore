@@ -28,6 +28,8 @@ services:
 
       - ENABLE_SSL_PROXY=TRUE
       - DISPLAY_ERRORS=FALSE
+    ports:
+      - ${APP_PORT}:80
     networks:
       - tipi_main_network
       - services
