@@ -34,7 +34,7 @@
       "label": "DB Password",
       "max": 50,
       "min": 16,
-      "required": true,
+      "required": false,
       "env_variable": "INVOICENINJA_ADMIN_DB_PASSWORD"
     },
     {
@@ -42,7 +42,7 @@
       "label": "DB Root Password",
       "max": 50,
       "min": 16,
-      "required": true,
+      "required": false,
       "env_variable": "INVOICENINJA_ADMIN_DB_ROOT_PASSWORD"
     },
     {
