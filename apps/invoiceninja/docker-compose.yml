@@ -77,4 +77,4 @@ networks:
   tipi_main_network:
     external: true
   services:
-    external: true
+    external: false
